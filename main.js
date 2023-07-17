@@ -1,5 +1,13 @@
-import { Ed25519Keypair, JsonRpcProvider, RawSigner, Connection, SequenceNumber, TransactionBlock, fromB64 } from '@mysten/sui.js';
-import fs from 'fs';
+const sui = require('@mysten/sui.js');
+const Ed25519Keypair = sui.Ed25519Keypair;
+const JsonRpcProvider = sui.JsonRpcProvider;
+const RawSigner = sui.RawSigner;
+const Connection = sui.Connection;
+const SequenceNumber = sui.SequenceNumber;
+const TransactionBlock = sui.TransactionBlock;
+const fromB64 = sui.fromB64;
+
+const fs = require('fs');
 
 
 //Install Node.js: https://nodejs.org/en/download | Скачайте и установите Node.js
